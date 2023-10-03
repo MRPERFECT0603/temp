@@ -1,4 +1,3 @@
-
 //required modules
 const express = require("express");
 const path = require("path");
@@ -6,7 +5,7 @@ const pug  = require("pug");
 const mongoose = require('mongoose');
 const Contact = require("../Contact-backend/models/contact");
 const port =  8000; // a port number 
-
+const cors = require("cors");
 
 
 
@@ -22,10 +21,10 @@ mongoose.connect('mongodb://localhost/contacts', {
 //EXPRESS 
 const app = express() // creating an express app
 
-
-app.use(express.static(path.join(__dirname, 'public')));//setting up a public folder for static pages 
+app.use(express.json());
+// app.use(express.static(path.join(__dirname, 'public')));//setting up a public folder for static pages 
 app.use(express.urlencoded({extended : true}));// Parse form data
-
+app.use(cors());
 //PUG
 // app.set('view engine' , 'pug'); //setting pug as the view engine for the express app
 // app.set('views' , path.join(__dirname , 'views')); //telling express the the files are in a folder named views.
@@ -38,6 +37,10 @@ app.use(express.urlencoded({extended : true}));// Parse form data
 
 app.post('/submit', async(req, res) => {
     const {name , email , contact , message} = req.body// Access form field data by name attribute 
+    console.log(name);
+    console.log(email);
+    console.log(contact);
+    console.log(message);
     try {
         // Create a new Contact document and save it to the database
         const newContact = new Contact({ name, email, contact , message });

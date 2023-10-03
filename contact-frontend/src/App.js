@@ -15,15 +15,12 @@ function App() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+    const headers = {
+      'Content-Type': 'application/json', // Set the content type to JSON
+    };
     try {
-      const response = await axios.post('/submit', formData); // Use Axios to make the POST request
+      const response = await axios.post('http://localhost:8000/submit',JSON.stringify(formData), { headers }) // Use Axios to make the POST request
   
-      if (response.status === 200) {
-        alert('Contact saved successfully!');
-      } else {
-        alert('Error saving the contact.');
-      }
     } catch (error) {
       console.error(error);
       alert('An error occurred.');
