@@ -1,0 +1,100 @@
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+form {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Set background color and text color similar to Netflix */
+body {
+  background-image: url('./1_5lyavS59mazOFnb55Z6znQ.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  margin: auto;
+  padding: 50px;
+}
+/* Style the form container */
+.form {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Style headings */
+h1 {
+  display: flex;
+  font-size: 32px;
+  align-self:center;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* Style text input fields */
+.basic {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Style the submit button */
+input[class="btn"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  background-color: #e50914; /* Netflix red */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the select dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Style the textarea */
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+/* Remove default focus outline */
+:focus {
+  outline: none;
+}
+
+#head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}

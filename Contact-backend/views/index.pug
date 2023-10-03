@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get in Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="form">
+    <div id = "head">
+      <h1>Get In Touch!</h1>
+      <h2>Use the contact form below to get in touch.</h2>
+      </div>
+      <form method="POST" action="/submit">
+        | Name:<br/>
+        <input  name= "name" type="text" class="basic" placeholder="Your Name" required/><br/>
+        <br/>Email Address:<br/>
+        <input  name="email" type="email"  class="basic" placeholder="your@sample.com" required/><br/>
+        <br/>Contact:<br/><input name= "contact" type="text" class="basic" placeholder="Your Contact Number" required/><br/>
+        <br/>Message:<br/>
+        <textarea name="message"  class="basic" cols="30" rows="10" placeholder="Write your text here." required></textarea><br/><br/>
+        <input type="submit" value="Send Away!" class="btn"/><br/><br/>
+      </form>
+    </div>
+  </body>
+</html>
