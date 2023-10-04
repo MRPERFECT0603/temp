@@ -11,7 +11,7 @@ const cors = require("cors");
 
 
 //MONGODB
-mongoose.connect('mongodb://localhost/contacts', {
+mongoose.connect('mongodb://mongo-db/contact', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })

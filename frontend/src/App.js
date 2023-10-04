@@ -19,7 +19,7 @@ function App() {
       'Content-Type': 'application/json', // Set the content type to JSON
     };
     try {
-      const response = await axios.post('http://localhost:8000/submit',JSON.stringify(formData), { headers }) // Use Axios to make the POST request
+      const response = await axios.post('http://node-api:8000/submit',JSON.stringify(formData), { headers }) // Use Axios to make the POST request
   
     } catch (error) {
       console.error(error);
