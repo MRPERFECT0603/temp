@@ -11,7 +11,7 @@ form {
 
 /* Set background color and text color similar to Netflix */
 body {
-  background-image: url('./1_5lyavS59mazOFnb55Z6znQ.png');
+  background-image: url('../public/1_5lyavS59mazOFnb55Z6znQ.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
